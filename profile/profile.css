@@ -1,0 +1,496 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profileuser-container{
+    padding: 1rem 3rem;
+}
+
+.profile-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;    
+    margin: 1rem 0;
+}
+    
+.user-img-and-email{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.userimg{
+    width: 100%;    
+    width: 11rem;     
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 2px solid #dbb42c;
+}
+
+.user-name-email{   
+    display: grid;
+    line-height: 40px;  
+}
+
+.user-name-email h1{
+    font-size: clamp(2rem, 0.75rem + 4vw, 3rem);
+}
+
+.user-name-email .user-email{
+    font-size: clamp(0.8rem, 0.425rem + 1.2vw, 1.1rem);
+}
+
+.user-content{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.user-container-wrapper{
+    display: grid ;
+    gap: 0.5rem;
+    width: 213px;
+}   
+
+.profile-select{
+    cursor: pointer;
+    padding: 0.8rem 0.8rem;
+    font-size: clamp(0.7rem, -0.075rem + 2.8vw, 1.2rem);
+    text-align: start;
+    padding-left: 5px   ;
+}
+
+.profile-select:hover{
+    color:#dbb42c;
+}
+
+.p{ 
+    color: #dbb42c  ;
+}
+
+/**/
+.user-content-info{      
+    padding: 0.8rem 1.5rem;
+}
+
+.content-labels{
+    color: #dbb42c;
+    font-size: 1.7rem;
+}
+
+.user-labels{
+    font-weight: bold;
+    color: white;
+    font-size: clamp(1rem, 0.625rem + 1.2vw, 1.3rem);   
+}
+.user-labes-cotent{
+    font-weight: 500;
+}
+/*End*/
+
+/*Dropdown for mobile view*/
+.dropdown-profile{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dropbtn{
+    padding: 0.3rem 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    justify-content: space-between  ;
+    cursor: pointer;
+    text-decoration: underline;
+    background: transparent;
+    border-radius: 10px;
+    outline: none;
+    color: #dbb42c;
+    border: none ;
+}
+.dropbtn i{
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: #221f1f;
+    height: 200px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #dbb42c;
+    transition:0.3 ease-in-out ;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+  
+.dropdown-content a{
+    font-size: 1.2rem;
+    font-weight: 650;
+    color: #dbb42c; 
+    padding: 10px 16px; 
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:active {background-color: grey;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #2980B9;
+}
+
+
+.user-container{
+    border: 2px solid #dbb42c;
+    width: 100%;    
+    border-radius: 10px;
+}
+
+/*end*/
+
+/*recent*/
+.recent{    
+    margin: 1rem 0rem;
+    padding-left: 20px; 
+    font-size: 1.8rem;  
+    font-weight: 700;
+    border-left:4px solid #dbb42c;
+}
+
+.item-recent img{
+    width: 100%;
+    max-width: 350px;   
+    height: 250px;
+    border-radius: 5px;
+}
+.item-recent img:hover{
+    border: 0.3px solid #dbb42c;
+}
+.recent-wrap{
+    padding: 1rem 3rem;
+}
+/*end*/
+
+/*Preference CSS*/
+
+.lang-content{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px ;
+}
+.prefe-wrap{
+    width: 100%;
+}
+.dropdown-pre select{
+    font-size: 0.9rem;
+    background-color: white;
+    width: 100%;
+    padding: 5px 0;
+    padding-left: 5px;
+    padding-right: 90px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dbb42c;
+    overflow: auto;
+}
+
+.dropdown-pre select option{
+    overflow-y:scroll;    
+    border: 1px solid #dbb42c;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:   black;
+    border: 1px solid #dbb42c;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 5px;
+    bottom: 1px;
+    background-color: #dbb42c;
+    -webkit-transition: .4s;
+    transition: .4s;
+}   
+  
+input:checked + .slider::before{        
+    background-color: black ;
+}
+  
+input:checked + .slider{
+    background-color: #dbb42c;
+}
+    
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+ }
+  
+.slider.round:before {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.pre-labels{
+    font-size: clamp(1rem, 0.75rem + 0.8vw, 1.2rem);          
+    color: white;
+    margin-left:65px;
+}
+.pre-lab{
+    margin: 0 10px;
+}
+
+.pre-toggle{
+    padding-top: 20px;
+}
+
+/*end*/
+
+/*Email notification CSS*/
+.m-deals-content{
+    font-size: clamp(1rem, 0.75rem + 0.8vw, 1.2rem);
+    margin-left:65px;
+}
+.notif{
+    margin-left: 10px;
+}
+/*end*/
+
+/*Change credential CSS*/
+.user-labels input{
+    margin: 3px 0.7rem;
+    width: 100%;
+    max-width: 170px;
+    padding: 0.4rem 0.7rem;
+    border-radius: 3px;
+    border: 1px solid #dbb42c;
+    outline: none;
+    color: black;
+}
+.sec{
+    line-height: 18px;
+}
+.creds{
+    font-weight: 400;
+    font-size: 1rem ;
+}
+
+.creds::after{
+    font-size: 1.1rem;
+    content: "*";
+    color: red;
+}   
+
+.user-labels button{    
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    color: #dbb42c;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.upt-btn{
+    text-align: center;
+    border-radius: 5px; 
+    background-color: #dbb42c;
+    width: 100% ;
+    max-width:100px;
+    cursor: pointer;
+    outline: none;
+    border: none ;
+    color: black;
+    font-size: 0.9rem;
+    font-family: "Cairo", sans-serif;
+    margin: 10px 0;
+}
+
+.user-labels select{
+    width: 100%;
+    max-width: 170px;
+    margin: 3px 0.7rem;
+    font-weight: 600;  
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dbb42c;
+    font-family: "Cairo", sans-serif;
+}
+
+.user-labels select option{
+    font-weight: 600;   
+    font-family: "Cairo", sans-serif;
+}
+
+/*Img update btn*/
+.upt-form input{
+    display: none;
+}
+.upt-form {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+}
+.chs-btn{
+    text-align: center;
+    border-radius: 5px; 
+    background-color: #dbb42c;
+    width: 100% ;
+    max-width:100px;
+    cursor: pointer;
+    outline: none;
+    border: none ;
+    color: black;
+    font-size: 0.9rem;
+    font-family: "Cairo", sans-serif;
+}
+
+/*end*/
+
+/*Oder history CSS*/
+.or-his-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: clamp(1rem, 0.75rem + 0.8vw, 1.2rem);
+}
+.his-con{ 
+    font-size: clamp(1rem, 0.75rem + 0.8vw, 1.2rem);
+}
+
+.his-con a{
+    color: #dbb42c;
+    text-decoration: underline;
+}
+
+/*end*/
+
+/*Paymeen methods CSS*/
+.payment-content{
+    display: grid;
+}
+
+.payment-wrapper{
+    gap: 10px;
+    display: grid ;
+}
+
+.e-card{
+    gap: 15px;
+    display: grid;
+}
+
+.btn-img{
+    border-radius: 10px;    
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+    height: 36px;
+    outline: none;
+    border: 1px solid #dbb42c;
+}
+
+.btn-img img{   
+    border-radius: 9px;        
+    object-fit: cover;
+    width: 100%;
+    max-width:150px;    
+    height: 35px;
+}
+
+
+/*end*/ 
+
+
+/*Responsive*/
+@media only screen and (max-width:600px){
+    .dropdown-pre select{
+        font-size: 0.9rem;
+        background-color: white;
+        width: 100%;    
+        padding: 5px 0;
+        padding-left: 5px;
+        padding-right: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #dbb42c;
+    }   
+}
+@media only screen and (max-width: 550px){
+    .user-container-wrapper{
+        display: none;
+    }
+    .user-container{    
+        width: 100% ;
+        border-radius: 10px;
+        height: auto;
+        
+    }
+    .user-content{
+        flex-direction: column; 
+    }
+
+    .dropdown-profile{
+        display: block;
+    }
+}   
+
+@media only screen and (max-width: 400px){
+    .dropdown-pre select{
+        font-size: 0.9rem;
+        background-color: white;
+        width: 100%;    
+        border-radius: 5px;
+        padding: 5px 0;
+        outline: none;
+        border: 1px solid #dbb42c;
+    }   
+}
+/*end*/

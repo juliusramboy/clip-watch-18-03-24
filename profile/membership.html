@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"   type="logo"   href="/last try/login_img/sitelogo.png">
+    <link rel="stylesheet" href="/last try/grid.css"/>
+    <link rel="stylesheet" href="/last try/profile/profile.css"/>
+    <link rel="stylesheet" href="/last try/app.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GengGeng</title> 
+</head>
+<body> 
+
+<div class="nav-wrapper">
+    <div class="container">
+        <div class="nav">
+            <a href="/last try/index.html" class="logo">
+                <i class='bx bx-movie-play bx-tada main-color'></i>Clip<span class="main-color">Watch</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/last try/index.html">Home</a></li>
+                <li><a href="/last try/index.html">Movies</a></li>
+                <li><a href="/last try/index.html">Series</a></li>        
+                <li><a href="/last try/index.html">Anime</a></li>
+                <li><a href="/last try/index.html">About</a></li>  
+                <li><a btn class="btn profile-container" href="/last try/login.htm "><span class="text">Sign Out</span></a></li>  
+                              
+            </ul>       
+
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----Profile para kay juls--->
+<div class="profileuser-container">         
+    <div class="profile-wrapper">
+        <div class="user-img-and-email">
+            <img id="userimg" class="userimg" src="/last try/login_img/gengeng.png" alt="">
+            <div class="user-name-email">
+                <h1  class="user-username">Username</h1>
+                <h2 class="user-email" id="email">qwetyyy@gmail.com</h2>
+            </div>
+        </div>
+    </div>          
+    <div class="user-content">  
+        <div class="dropdown-profile">
+            <button class="dropbtn">Membership<i class='bx bxs-down-arrow'></i></button>
+            <div class="dropdown-content">
+              <a href="membership.html">Membership</a>
+              <a href="preference.html">Preferences</a>
+              <a href="/last try/profile/emailnotif.html">Email Notifications</a>
+              <a href="/last try/profile/credential.html">Change Credential</a>
+              <a href="/last try/profile/Order.html">Order History</a>
+              <a href="/last try/profile/payment.html">Payment Methods</a>
+            </div>
+        </div>          
+        <div class="user-container-wrapper">    
+            <a href="/last try/profile/membership.html"><p class="profile-select p">Membership Info</p></a>
+            <a href="/last try/profile/preference.html"><p class="profile-select">Preferences</p></a>
+            <a href="/last try/profile/emailnotif.html"><p class="profile-select">Email Notifications</p></a>
+            <a href="/last try/profile/credential.html"><p class="profile-select">Change Credential</p></a>  
+            <a href="/last try/profile/Order.html"><p class="profile-select">Order History</p></a>
+            <a href="/last try/profile/payment.html "><p class="profile-select">Payment Methods</p></a>
+        </div>  
+        <div class="user-container">
+            <div class="user-content-info">
+                <span class="content-labels">General Settings:
+                    <p class="user-labels">Account name: 
+                        <span class="user-labes-cotent" id="uname">username</span>
+                    </p>    
+                    <p class="user-labels">Birthday: 
+                        <span class="user-labes-cotent" id="bday">00/00/0000</span>
+                    </p>
+                    <p class="user-labels">Gender:  
+                        <span class="user-labes-cotent" id="gender-profile">Male</span>
+                    </p>
+                </span> 
+                <span class="content-labels">Contact Info:  
+                    <p class="user-labels">Email: 
+                        <span class="user-labes-cotent" id="email-profile">qwerty@gmail.com</span>
+                    </p>
+                    <p class="user-labels">Phone: 
+                        <span class="user-labes-cotent" id="pnum-profile">+63123456789</span>
+                    </p>    
+                </span>
+                <span class="content-labels">Security:  
+                    <p class="user-labels">Password:
+                        <span class="user-labes-cotent" id="pword-profile">thisnuts1234</span>
+                    </p>    
+                    <p class="user-labels">Email Authentication:
+                        <span class="user-labes-cotent" id="emailAuth-profile">Verified email</span>
+                    </p>    
+                </span>  
+                
+            </div>          
+        </div>      
+    </div>
+</div>  
+<!--End na-->
+
+<!--Recent view carousel-->
+<div class="recent-wrap">
+    <div class="recent">Recent Views</div>      
+    <div class="owl-carousel" id="recent">
+        <a href="#" class="movie-item">
+            <img src="/last try/images/series/supergirl.jpg" alt="">
+            <div class="movie-item-content">
+                <div class="movie-item-title">
+                    Supergirl
+                </div>
+                <div class="movie-infos">
+                    <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                    </div>
+                    <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>HD</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>16+</span>
+                    </div>
+                </div>  
+            </div>
+        </a>
+        <a href="#" class="movie-item">
+            <img src="/last try/images/series/stranger-thing.jpg" alt="">
+            <div class="movie-item-content">
+                <div class="movie-item-title">
+                    Stranger Things
+                </div>
+                <div class="movie-infos">
+                    <div class="movie-info">    
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                    </div>
+                    <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>HD</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>16+</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="movie-item">
+            <img src="/last try/images/cartoons/demon-slayer.jpg" alt="">
+            <div class="movie-item-content">
+                <div class="movie-item-title">
+                    Demon Slayer
+                </div>
+                <div class="movie-infos">
+                    <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                    </div>
+                    <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>HD</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>16+</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="movie-item">
+            <img src="/last try/images/cartoons/over-the-moon.jpg" alt="">
+            <div class="movie-item-content">
+                <div class="movie-item-title">
+                    Over The Moon
+                </div>
+                <div class="movie-infos">
+                    <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                    </div>
+                    <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>HD</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>16+</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="movie-item">
+            <img src="/last try/images/movies/theatre-dead.jpg" alt="">
+            <div class="movie-item-content">
+                <div class="movie-item-title">
+                    Theatre of the dead
+                </div>
+                <div class="movie-infos">
+                    <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                    </div>
+                    <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>HD</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>16+</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="movie-item">
+            <img src="/last try/images/movies/transformer.jpg" alt="">
+            <div class="movie-item-content">
+                <div class="movie-item-title">
+                    Transformer
+                </div>
+                <div class="movie-infos">
+                    <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                    </div>
+                    <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>HD</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>16+</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<!---->
+
+<!--FOOTER-->
+    <footer id="e"class="section">
+        <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-6 col-sm-12">
+                <div class="content">
+                    <a  href="#" class="logo">
+                        <i class='bx bx-movie-play bx-tada main-color'></i>Clip<span class="main-color">Watch</span>
+                    </a>
+                    <p>
+                        We've upgraded your streaming experience with a sleek new interface, better content, and personalized recommendations. Download our mobile app, connect with fellow enthusiasts, and stay tuned for more updates. Happy streaming!
+                    </p>
+                    <div class="social-list">
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>ClipWatch</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="team.html">Our Team</a></li>                                   
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Browse</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#a">Movies</a></li>
+                                <li><a href="#b">Series</a></li>
+                                <li><a href="#c">Anime</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Help</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">Term of Use</a></li>
+                                <li><a href="#">Media Center</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Contacts Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Download app</b></p>
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="https://play.google.com/">
+                                        <img src="/last try/images/google-play.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.apple.com/ph/app-store/">
+                                        <img src="/last try/images/app-store.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    Copyright 2023 <a href="#" target="_blank">
+        all Rights Reserve</a>
+</div>
+
+   
+<!---script Hambuger-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!---script Owl carousel-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!---script Hambuger and Carousel-->
+<script src="/last try/app.js"></script>
+
+<!---owlCarousel-->
+<script type="text/javascript">
+    $('#recent').owlCarousel({
+        loop:false,
+        nav:false,
+        dots:false,
+        rlt:true,
+        margin: 15,
+        responsive:{
+            300: {
+                items: 2
+            },
+            500: {
+                items: 3
+            },
+            1280: {
+                items: 4
+            },
+            1600: {
+                items: 5
+            }
+    }   
+    })
+</script>
+
+<!---
+<script>
+     const img = document.getElementById('userimg');
+     const inpimg = document.getElementById('image-file');
+
+    
+    inpimg.onchange = function(){
+        img.src = URL.createObjectURL(inpimg.files[0]);
+    }
+
+</script>
+-->
+<script src="dropdown.js"></script>
+</body>
+</html>

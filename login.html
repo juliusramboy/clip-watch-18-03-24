@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon"   type="logo"   href="/last try/login_img/sitelogo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="login.css" />
+    <title>ClipWatch</title> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup"> 
+          <form action="index.html" class="sign-in-form" id="login">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input id="uname" type="text" placeholder="Username">
+            </div>  
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input id="pword" type="password"  placeholder="Password" />
+            </div>
+            <span id="auth" style="text-align: center;" ></span>
+            <input id="sub" type="submit" value="Login" class="btn solid" />
+
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com/" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://accounts.google.com/" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="https://www.linkedin.com/" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+  
+          </form>
+          <form action="#login" class="sign-up-form" id="submitsignup">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fa-solid fa-phone"></i> 
+              <input type="text" placeholder="Phone Number" id="nohp" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" id="username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email"  id="email"/>
+            </div>  
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="password"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Confirm Password" id="confirmpass"/>
+            </div>    
+            <span id="auth" style="text-align: center;" ></span>
+            <input type="submit" class="btn" value="Sign up" />
+            <!--
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com/" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://accounts.google.com/" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="https://www.linkedin.com/" class="social-icon">
+                <i class= "fab fa-linkedin-in"></i>
+              </a
+            </div>
+            -->       
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+                Ready for a cinematic journey like no other? Welcome to ClipWatch 
+            </p>
+            <button class="btn transparent" id="sign-up-btn"> 
+              Sign up
+            </button>
+          </div>
+          <img src="/last try/login_img/ClipWatch__1_-removebg-preview.png" class="image" alt=""  style="height: -500px;" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+                Join ClipWatch today and immerse yourself in a world of cinematic wonders. Lights, camera, action – your entertainment journey begins here! 
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="/last try/login_img/ClipWatch__1_-removebg-preview.png" class="image" alt="" style="height: -300px;"/>
+        </div>
+      </div>
+    </div>  
+
+    <script src="login.js"></script>
+    <script src="loginauth.js"></script>
+  </body>
+</html>   
